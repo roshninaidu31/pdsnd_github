@@ -1,6 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
+mport regex as re
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -89,6 +90,7 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
+    print("Most commonly used start station")
     print(df['Start Station'].mode()[0])
 
     # TO DO: display most commonly used end station
